@@ -1,3 +1,252 @@
+:root {
+    --bg: #1e1e1e;
+    --panel: #252526;
+    --sidebar: #181818;
+    --border: #333333;
+    --text: #d4d4d4;
+    --blue: #569cd6;
+    --green: #6a9955;
+    --yellow: #dcdcaa;
+    --orange: #ce9178;
+    --purple: #c586c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Fira Code', monospace;
+    min-height: 100vh;
+}
+
+/* TOP BAR */
+.topbar {
+    height: 40px;
+    background: var(--panel);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+    color: #aaa;
+    justify-content: space-between;
+}
+
+.dots {
+    display: flex;
+    gap: 7px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f57; }
+.yellow-dot { background: #febc2e; }
+.green-dot { background: #28c840; }
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    min-height: calc(100vh - 40px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 65px;
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    gap: 30px;
+    color: #858585;
+    font-size: 22px;
+}
+
+.sidebar span {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sidebar span:hover {
+    color: white;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+.tabs {
+    height: 42px;
+    display: flex;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+}
+
+.tab {
+    padding: 12px 25px;
+    font-size: 12px;
+    border-right: 1px solid var(--border);
+    border-top: 2px solid var(--blue);
+    background: var(--bg);
+    color: white;
+}
+
+/* CONTENT */
+.container {
+    max-width: 1000px;
+    padding: 70px 8%;
+    margin: auto;
+}
+
+.line {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.comment {
+    color: var(--green);
+    font-size: 14px;
+}
+
 h1 {
-    color: blue;
+    font-size: clamp(32px, 6vw, 65px);
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--blue);
+}
+
+h1 span {
+    color: var(--yellow);
+}
+
+.subtitle {
+    color: var(--purple);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 2;
+    color: #aaa;
+}
+
+.keyword { color: var(--purple); }
+.string { color: var(--orange); }
+.function { color: var(--yellow); }
+.blue { color: var(--blue); }
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--blue);
+    color: #111;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 22px;
+    color: var(--blue);
+    margin-bottom: 25px;
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+    background: #222;
+    transition: .3s;
+}
+
+.project:hover {
+    border-color: var(--blue);
+    transform: translateX(5px);
+}
+
+.project h3 {
+    color: var(--yellow);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #999;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 10px 15px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--green);
+    font-size: 12px;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    color: #666;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    .sidebar {
+        width: 42px;
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 45px 7%;
+    }
+
+    .topbar {
+        padding: 0 10px;
+    }
+
+    .tab {
+        padding: 12px;
+    }
 }
