@@ -1,20 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Portfolio Atanas Z.M.</title>
+    <script src="js/main.js" defer></script>
+    <title>Portafolis | Atanas Z.M.</title>
 </head>
 <body>
-    <header>
-        <h1>Portfolio Atanas Z.M.</h1>
-    </header>
-    <main>
-        <p>Bienvenidos a mi portfolio!</p>
-    </main>
-    <footer>
-        <p>© 2026 Made by Atanas Z.M.</p>
-    </footer>
+    <div class="window">
+        <header class="topbar">
+            <div class="window-controls" aria-hidden="true">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <nav class="tabs" aria-label="Navegació principal">
+                <a href="index.html" class="tab active" aria-current="page">portfolio.html</a>
+                <a href="sobre-mi.html" class="tab">sobre-mi.html</a>
+                <a href="projectes.html" class="tab">projectes.html</a>
+            </nav>
+        </header>
+
+        <main class="layout">
+            <aside class="sidebar">
+                <div class="brand-block">
+                    <p class="label">EXPLORADOR</p>
+                    <p class="brand-name">Atanas</p>
+                </div>
+
+                <ul class="menu">
+                    <li class="active"><a href="index.html" aria-current="page">Inici</a></li>
+                    <li><a href="sobre-mi.html">Sobre mi</a></li>
+                    <li><a href="projectes.html">Projectes</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+
+                <div class="stack-box">
+                    <p class="label">INTERESSOS</p>
+                    <div class="stack-list">
+                        <span>Ciberseguretat</span>
+                        <span>Linux</span>
+                        <span>Xarxes</span>
+                        <span>Seguretat</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div id="bienvenida" class="hero-card">
+                    <p class="eyebrow">// benvinguda</p>
+                    <h1>Hola, soc <span>Atanas</span>.</h1>
+                    <p class="lead">Estudiant d'ASIX amb perfil de ciberseguretat. Estic començant en el món del desenvolupament web i m'agrada aprendre cada dia amb HTML, CSS i tecnologies relacionades.</p>
+                    <div class="actions">
+                        <a href="sobre-mi.html" class="button primary">Sobre mi</a>
+                        <a href="#contacte" class="button secondary">Contacte</a>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <article class="card">
+                        <p class="label">FORMACIÓ</p>
+                        <h2>ASIX</h2>
+                        <p>Actualment curso Administració de Sistemes Informàtics en Xarxa i estic centrat en l'àmbit de la ciberseguretat.</p>
+                    </article>
+
+                    <article class="card">
+                        <p class="label">EDAT</p>
+                        <h2>19 anys</h2>
+                        <p>Tinc 19 anys i estic començant en el món professional de la tecnologia amb moltes ganes d'aprendre.</p>
+                    </article>
+
+                    <article class="card">
+                        <p class="label">ESTUDIS</p>
+                        <h2>SMX</h2>
+                        <p>He cursat el cicle formatiu de grau mitjà de Sistemes Microinformàtics i Xarxes, que m'ha donat una bona base en xarxes i sistemes.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contacte">
+            <p>© 2026 Fet per Atanas Z.M.</p>
+        </footer>
+    </div>
 </body>
 </html>

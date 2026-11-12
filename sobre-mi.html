@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>Sobre mi | Atanas Z.M.</title>
 </head>
 <body>
+    <div class="window">
+        <header class="topbar">
+            <div class="window-controls" aria-hidden="true">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <nav class="tabs" aria-label="Navegació principal">
+                <a href="index.html" class="tab">portfolio.html</a>
+                <a href="sobre-mi.html" class="tab active" aria-current="page">sobre-mi.html</a>
+                <a href="projectes.html" class="tab">projectes.html</a>
+            </nav>
+        </header>
 
+        <main class="layout">
+            <aside class="sidebar">
+                <div class="brand-block">
+                    <p class="label">EXPLORADOR</p>
+                    <p class="brand-name">Atanas</p>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html">Inici</a></li>
+                    <li class="active"><a href="sobre-mi.html" aria-current="page">Sobre mi</a></li>
+                    <li><a href="projectes.html">Projectes</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+
+                <div class="stack-box">
+                    <p class="label">INTERESSOS</p>
+                    <div class="stack-list">
+                        <span>Ciberseguretat</span>
+                        <span>Linux</span>
+                        <span>Xarxes</span>
+                        <span>Seguretat</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div id="bienvenida" class="hero-card">
+                    <p class="eyebrow">// perfil</p>
+                    <h1>Sobre <span>mi</span></h1>
+                    <p class="lead">Soc estudiant d'ASIX amb perfil de ciberseguretat, faig primer, tinc 19 anys i he obtingut el títol de grau mitjà de SMX.</p>
+                    <div class="actions">
+                        <a href="index.html" class="button secondary">Tornar</a>
+                        <a href="#info" class="button primary">Més informació</a>
+                    </div>
+                </div>
+
+                <div class="info-grid" id="info">
+                    <article class="card">
+                        <p class="label">FORMACIÓ</p>
+                        <h2>ASIX</h2>
+                        <p>Estic cursant Administració de Sistemes Informàtics en Xarxa i m'interessen especialment la ciberseguretat i l'anàlisi de sistemes.</p>
+                    </article>
+
+                    <article class="card">
+                        <p class="label">EDAT</p>
+                        <h2>19 anys</h2>
+                        <p>Estic en una etapa d'aprenentatge constant, amb ganes de créixer en l'àmbit tecnològic i millorar cada dia.</p>
+                    </article>
+
+                    <article class="card">
+                        <p class="label">ESTUDIS</p>
+                        <h2>SMX</h2>
+                        <p>He obtingut el títol de grau mitjà de Sistemes Microinformàtics i Xarxes, que m'ha donat una base molt útil en xarxes, maquinari i sistemes.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contacto">
+            <p>© 2026 Fet per Atanas Z.M.</p>
+        </footer>
+    </div>
 </body>
 </html>
