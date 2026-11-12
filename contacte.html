@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
     <title>Contacte | Atanas Z.M.</title>
 </head>
 <body>
+    <div class="window">
+        <header class="topbar">
+            <div class="window-controls" aria-hidden="true">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <nav class="tabs" aria-label="Navegació principal">
+                <a href="index.html" class="tab">portfolio.html</a>
+                <a href="sobre-mi.html" class="tab">sobre-mi.html</a>
+                <a href="projectes.html" class="tab">projectes.html</a>
+            </nav>
+        </header>
 
+        <main class="layout">
+            <aside class="sidebar">
+                <div class="brand-block">
+                    <p class="label">EXPLORADOR</p>
+                    <p class="brand-name">Atanas</p>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="sobre-mi.html">Sobre mi</a></li>
+                    <li><a href="projectes.html">Projectes</a></li>
+                    <li class="active"><a href="contacte.html" aria-current="page">Contacte</a></li>
+                </ul>
+
+                <div class="stack-box">
+                    <p class="label">INTERESSOS</p>
+                    <div class="stack-list">
+                        <span>Ciberseguretat</span>
+                        <span>Linux</span>
+                        <span>Xarxes</span>
+                        <span>Seguretat</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="content">
+                <div class="hero-card">
+                    <p class="eyebrow">// contacte</p>
+                    <h1>Parlem <span>?</span></h1>
+                    <p class="lead">Omple el formulari per explicar-me el motiu del teu contacte.</p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-field">
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" type="text" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="cognoms">Cognoms</label>
+                        <input id="cognoms" name="cognoms" type="text" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="correu">Correu electrònic</label>
+                        <input id="correu" name="correu" type="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="motiu">Motiu del contacte</label>
+                        <textarea id="motiu" name="motiu" rows="5" required></textarea>
+                    </div>
+
+                    <button class="button primary" type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Fet per Atanas Z.M.</p>
+        </footer>
+    </div>
 </body>
 </html>
